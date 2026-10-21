@@ -1,0 +1,61 @@
+
+
+.subpage_img { opacity: 0; transform:translateY(4rem); }
+.subpage_img.active { opacity: 1; transform:translate(0); transition: 1.4s 0s; }
+.subpage_img2 { opacity: 0;}
+.subpage_img2.active { opacity: 1; transition: 1.4s 0s; }
+
+.subpage_img.top { transform:translateY(-2rem); }
+.subpage_img.top.active { opacity: 1; transform:translate(0); transition: 1.4s 0s; }
+
+#sub_tit { display: none;}
+
+
+/**/
+.brand2_bottom { width: 100%; height: 655px;position: relative; padding-top: 20px; opacity: 0; transform: translateY(3rem);}
+.brand2_bg { width: 100%; height: 653px; background: url(../sub/brand2_bg.jpg)center no-repeat; background-size: cover; }
+.brand2_img_box { width: 100%; max-width: 861px; position: absolute; top: 110px; left: 50%; transform: translateX(-50%);}
+.brand2_img_box .box { width: 100%; display: flex; }
+.brand2_img_box .box01 { align-items: flex-end; gap:10px; width: 100%; max-width: 736px; transform: translateX(84px); }
+.brand2_img_box .box01 img:first-child { }
+
+.brand2_img_box .box02 { align-items: flex-start; gap:10px; margin-top: 10px;}
+
+.brand2_txt { position: absolute; }
+.brand2_txt h4	{ font-family: 'Averta Demo'; font-size: 15px; color: #381b21;}
+.brand2_txt p { font-size: 13px; color: #000; opacity: 0.85; line-height: 100%; margin-top: 5px;}
+.brand2_txt.txt01 { text-align: right; top: 84px; left: -128px;}
+.brand2_txt.txt02 { text-align: left; top: -60px;}
+.brand2_txt.txt03 { text-align: left; top: 40px;}
+.brand2_txt.txt04 { text-align: left; margin-top: 20px;}
+.brand2_txt.txt05 { text-align: left; margin-top: 20px;}
+.brand2_txt.txt06 { text-align: left; right: -135px; top: 300px;	}
+
+.brand2_con { opacity: 0; }
+
+.brand2_bottom.active { opacity: 1; transform: translate(0); transition: 1.2s 0s; }
+.brand2_bottom.active .brand2_con.con01 { opacity: 1; transition: 1.2s 0s; }
+.brand2_bottom.active .brand2_con.con02 { opacity: 1; transition: 1.2s 0.3s; }
+.brand2_bottom.active .brand2_con.con03 { opacity: 1; transition: 1.2s 0.6s; }
+.brand2_bottom.active .brand2_con.con04 { opacity: 1; transition: 1.2s 0.9s; }
+.brand2_bottom.active .brand2_con.con05 { opacity: 1; transition: 1.2s 1.2s; }
+.brand2_bottom.active .brand2_con.con06 { opacity: 1; transition: 1.2s 1.5s; }
+
+
+
+@media all and (max-width: 1000px) {
+
+	.brand2_img_box { max-width: 80%; }
+	.brand2_img_box .box { max-width: 100%;}
+	.brand2_img_box .box01 { transform: translateX(7vw); }
+
+	.brand2_txt h4 { font-size: 1.5vw;}
+	.brand2_txt p { font-size: 1.3vw;}
+
+	.brand2_txt.txt01 { top: 7vw; left: -14vw;}
+	.brand2_txt.txt02 { top: -6vw;}
+	.brand2_txt.txt03 { top: 3vw; }
+	.brand2_txt.txt06 { top: 45vw; right: 24.5vw;}
+
+
+}
