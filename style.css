@@ -1,7 +1,0 @@
-/* 원본 디자인은 css/ 폴더에 보관하고, 추가 수정은 이 파일에 작성합니다. */
-a:focus-visible,
-button:focus-visible,
-input:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 4px;
-}
